@@ -4,7 +4,7 @@
 <head lang="en">
 	<title>London Prestige Car Wash Ltd.</title>
 	<meta name="description" content="Prestige Carwash, London Ontario">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="prestigestylesheet.css">
    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300, 700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -67,10 +67,11 @@
 	<section id='PRICES' class="container top">
 		<div class="navadjustment">
 		<h1>Services and Pricing</h1>
-			<h2 class="col-md-12" id="WASHES">Car Wash Packages</h2>
-			
-			<div id="Packages" class="col-md-6">
-					<div>
+		<h2 id="WASHES">Car Wash Packages</h2>	
+			<div id="Packages" class="col-md-12">
+				<p>All packages are done on a walk-in basis, no appointment necessary. Dirtier Vehicles may cost more (cat hair, messy spills, etc.), please talk to the manager upon arrival for a quick consultation for any questions about packages, your car, or for help in choosing a service. 
+				<br><em>**All prices listed do <strong>NOT</strong> include tax.</em> </p>
+					<div class="col-md-6">
 						<table class='table table-condensed table-striped'>
 							<tr>
 								<th colspan="2">#1 Exterior</th>
@@ -90,18 +91,25 @@
 							<tr>
 								<td colspan="2">Spotless Exterior Clean</td>
 							</tr>
-							<tr id="pricing">
-								<td>$11+tax</td>
-								<td>Seniors $10+tax</td>
-							</tr>
 							<tfoot>
 								<tr>
-									<td colspan="2">Vans, SUVs and Trucks add $2</td>
+									<td colspan="2" style="font-size: 1.1em;">Car Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white;">
+									<td>$12</td>
+									<td>Seniors: $11</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 1.1em;">Van/SUV/Truck Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white; border-bottom:1px solid #990000;">
+									<td>$15</td>
+									<td>Seniors: $14</td>
 								</tr>
 							</tfoot>
 						</table>
 					</div>
-					<div>
+					<div class="col-md-6">
 						<table class='table table-condensed table-striped'>
 							<tr>
 								<th colspan="2">#2 Interior & Exterior</th>
@@ -118,18 +126,32 @@
 							<tr>
 								<td colspan="2"> Inside Windows, Dashboard, Cupholders and Door Panel Cleaning</td>
 							</tr>
-							<tr id="pricing">
-								<td>$26+tax</td>
-								<td>Seniors $22+tax</td>
-							</tr>
 							<tfoot>
 								<tr>
-									<td colspan="2">Vans, SUVs and Trucks add $6</td>
+									<td colspan="2" style="font-size: 1.1em;">Car Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white;">
+									<td>$28</td>
+									<td>Seniors: $26</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 1.1em;">SUV/Truck Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white;">
+									<td>$34</td>
+									<td>Seniors: $32</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 1.1em;">Van Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white; border-bottom:1px solid #990000;">
+									<td>$36</td>
+									<td>Seniors: $34</td>
 								</tr>
 							</tfoot>
 						</table>
 					</div>
-					<div>
+					<div class="col-md-6">
 						<table class='table table-condensed table-striped'>
 							<tr>
 								<th colspan="2">#3 The Works</th>
@@ -149,18 +171,32 @@
 							<tr>
 								<td colspan="2"> Rim Cleaning and Tire Dressing</td>
 							</tr>
-							<tr id="pricing">
-								<td>$36+tax</td>
-								<td>Seniors $33+tax</td>
-							</tr>
 							<tfoot>
 								<tr>
-									<td colspan="2">Vans, SUVs and Trucks add $6</td>
+									<td colspan="2" style="font-size: 1.1em;">Car Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white;">
+									<td>$38</td>
+									<td>Seniors: $35</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 1.1em;">SUV/Truck Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white;">
+									<td>$44</td>
+									<td>Seniors: $41</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 1.1em;">Van Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white; border-bottom:1px solid #990000;">
+									<td>$46</td>
+									<td>Seniors: $43</td>
 								</tr>
 							</tfoot>
 						</table>
 					</div>
-					<div>
+					<div class="col-md-6">
 						<table class='table table-condensed table-striped'>
 							<tr>
 								<th colspan="2">#4 The Prestige</th>
@@ -174,20 +210,33 @@
 							<tr>
 								<td colspan="2"> Beautifier Armorall Applied To All Interior Leather and Plastics</td>
 							</tr>
-							<tr id="pricing">
-								<td>$60+tax</td>
-								<td>Seniors $56+tax</td>
-							</tr>
 							<tfoot>
 								<tr>
-									<td colspan="2">Vans, SUVs and Trucks add $6</td>
+									<td colspan="2" style="font-size: 1.1em;">Car Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white;">
+									<td>$62</td>
+									<td>Seniors: $58</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 1.1em;">SUV/Truck Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white;">
+									<td>$68</td>
+									<td>Seniors: $64</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 1.1em;">Van Pricing</td>
+								</tr>
+								<tr id="pricing" style="background: white; border-bottom:1px solid #990000;">
+									<td>$70</td>
+									<td>Seniors: $66</td>
 								</tr>
 							</tfoot>
 						</table>
 					</div>
-			</div>
-			<div class="col-md-6" id="other">	
-					<div>
+
+					<div class="col-md-12" id="other">
 						<table class='table table-condensed table-striped'>
 							<tr>
 								<th class="tabletop2" colspan="2">Prestige Extras</th>
@@ -233,8 +282,6 @@
 								<td>$10</td>
 							</tr>
 						</table>
-					</div>
-					<div>
 						<table class='table table-condensed side'>
 							<tr>
 								<td>* Over sized vehicles add $2</td>
@@ -247,9 +294,13 @@
 							</tr>
 						</table>
 					</div>
+					
 			</div>
-
 			<h2 class="col-md-12" id="DETAILING">Detailing Services</h2>
+			<div class="col-md-12">
+				<div class="col-md-12">
+					<p> Detailing services require a quick consultation to make an appointment, discuss the service needed, and the condition of the car area where service will be done. Please feel free to call in during business hours or walk in to see a manager to make the consultation/service booking.<br><em>**All prices listed do <strong>NOT</strong> include tax.</em> </p>
+				</div>
 				<div class="col-md-6">
 					<table class='table table-condensed col-md-7 table-striped'>
 						<tr>
@@ -257,11 +308,11 @@
 						</tr>
 						<tr>
 							<td>Carpet Floor Shampoo</td>
-							<td>$50</td>
+							<td>$70</td>
 						</tr>
 						<tr>
 							<td>Seats Shampoo</td>
-							<td>$60</td>
+							<td>$80</td>
 						</tr>
 						<tr>
 							<td>Ceiling Shampoo</td>
@@ -332,7 +383,7 @@
 							<td>Individual Carpet Mat Cleaning</td>
 							<td>$2.5</td>
 						</tr>
-						<tr>
+						<tr style="border-bottom:1px solid #990000;">
 							<td colspan="2"><em> Dog/Cat Hair and more soiled vehicles may cost more</em></td>
 						</tr>
 					</table>
@@ -381,6 +432,7 @@
 						</table>
 					</div>
 				</div>
+			</div>
 		</div>
 	</section>
 
@@ -410,10 +462,11 @@
 	            <br>London, Ontario
 	            <br>N6E-3N5
 	            <br>
-	            <br>Monday-Saturday: 9:00 AM - 6:00 PM
-	            <br>Sunday: 10:00 AM - 4:00 PM
+	            <br>Monday-Saturday: 9:00 AM - 5:00 PM
+	            <br>Sunday: Closed
 	            <br>
-	            <br><em><strong> Open 7 days a week, weather permitting.
+	            <br><em><strong> Open 6 days a week, weather permitting.
+	            <br>(Closed during unfavorable weather i.e. wet days, rain, snow fall, etc.)
 	            <br> Closed during major holidays.</strong></em>
 	        </p>
         </div>
