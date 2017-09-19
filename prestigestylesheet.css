@@ -1,31 +1,42 @@
+
+
 h1{
-font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 h2{
   font-family: 'Open Sans Condensed', sans-serif;
-font-weight: 300;
+  font-weight: 300;
+}
+#contactInfo, #aboutInfo{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 /*------------------NAVBAR & TOP-------------------*/
 #prestigeLogoPic{
   height: 60px;
   width: 155px;
-  margin-left: 9px;
 }
-
 .navi{
   list-style: none;
   margin:0px;
   margin-left:-15px;
-  padding:0px;
+  padding:0 0.1rem;
+  top:0;
   overflow: hidden;
-  background-color: rgba(5,5,5,1.0);
+  background-color: #282733;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
+.navi li a:hover{
+  text-decoration: none;
+  border-bottom: #c90211 3px solid;
+}
+
 .navi li{
-  display: inline;
+  display: inline-block;
 }
 
 .navi li a{
@@ -33,59 +44,61 @@ font-weight: 300;
   color: white;
   margin-right: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 15pt;
   font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .jumbotron {
   background-image:url('carwashbackground.jpg');
-  background-size: 100%;
-  height:780px;
-  padding:0px;
-  background-position: center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding:0;
 }
 
-.navadjustment{
-    padding-top: 70px;
-}
-
-.top{
-margin-top: -70px;
-padding-bottom: 70px;
+section{
+  padding-top: 85px;
 }
 
 /*------------------------ABOUT-------------------*/
 
-
 #aboutInfo{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 16pt;
   text-align: center;
   top: 5px;
+  font-weight: 700;
 }
 
 /*-----------------------PRICING------------------------*/
+.fa-car:before, .fa-taxi:before, .fa-star:before {
+    color: #e7d0b5;
+}
 
 th{
-  background-color: #800000 ;
+  background-color: black;
+  font-size: 1.35rem;
+  letter-spacing: 0.15rem;
   color: white;
-  font-size: 14pt;
+}
+
+#description{
+ background-color: black;
+ color: white;
 }
 
 #pricing{
-  font-size: 12pt;
   font-weight: bold;
-  color: #800000;
+  color: white;
+  background-color: #7F0000;
 }
 #pricing2{
-  font-size: 12pt;
   font-weight: bold;
   color: black;
+  background-color: white;
 }
 
 tfoot{
   color: white;
-  background-color:rgba(100,0,10,0.5);
 }
 .tabletop2{
   background-color: black;
@@ -113,67 +126,39 @@ tfoot{
 .specialhover{
   width:340px;
   height:190px;
+  max-width: 100vw;
   background-size: 100%;
   border-radius: 15px;
   display: inline-block;
   margin-right: 15px;
   margin-top: 15px;
+  background-position: top center;
+}
+
+.specialhover:hover{
+  background-position: bottom center;
+  border: 1px lightgrey solid;
 }
 
 #seniorDisc{
-  padding-top: 0px;
-  background-image:url('specials/senior_.png');
-  background-position: center top;
-}
-
-#seniorDisc:hover{
-  background-position: center bottom;
+  background-image:url('specials/senior.png');
 }
 
 #buy5{
-  background-image: url('specials/buy5_.png');
-  background-position: top center;
-}
-
-#buy5:hover{
-  background-position: bottom center;
+  background-image: url('specials/buy.png');
 }
 
 #stamp{
-  background-image: url('specials/stamp_.png');
-  background-position: top center;
-}
-
-#stamp:hover{
-  background-position: bottom center;
-}
-
-#shampoo{
-  background-image: url('specials/shampoo_.png');
-  background-position: top center;
-}
-
-#shampoo:hover{
-  background-position: bottom center;
+  background-image: url('specials/stamp.png');
 }
 
 #gift{
-  background-image: url('specials/gift2_.png');
-  background-position: top center;
-}
-
-#gift:hover{
-  background-position: bottom center;
+  background-image: url('specials/gift.png');
 }
 
 /*----------------CONTACT & Bottom Bar--------------------------*/
 #CONTACT{
   margin-top: -70px;
-}
-#contactInfo{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 15pt;
-  font-weight: 300;
 }
 
 #map{
@@ -182,7 +167,36 @@ tfoot{
 }
 
 #botBar{
-  height: 20px;
-  position: static;
-  background-color: black;
+  height: 160px;
+  background-color: #f5f5f5;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5em;
+}
+
+#botBar a{
+  color:black;
+  position: relative;
+  top: 30%;
+}
+
+#botBar a:hover{
+  color: #f0bc00;
+}
+p strong{
+  font-weight: 700;
+}
+.card-header{
+  background-color: #e4e4e4;
+}
+
+@media only screen and (max-width : 480px){
+  html, body{
+    width: 100%;
+  }
+  .navi li a{
+    font-size: 1.1rem;
+  }
+  #botBar{
+    height: 40vh;
+  }
 }

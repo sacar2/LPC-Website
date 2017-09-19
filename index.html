@@ -4,52 +4,55 @@
 <head lang="en">
 	<title>London Prestige Car Wash Ltd.</title>
 	<meta name="description" content="Prestige Carwash, London Ontario">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--................... CSS ...................-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="prestigestylesheet.css">
-   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!--................... FONTS ...................-->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300, 700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+	<!--.................. FAVICON ..................-->
 	<link href="favicon.ico" rel="shortcut icon" />
+
+	<!--................. GOOGLE MAPS ...............-->
 	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-54083949-1', 'auto');
+	ga('send', 'pageview');
+	</script>
 
-  ga('create', 'UA-54083949-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </head>
 <body>
 
 	<!--NAVIGATION BAR-->
-	<nav>
-		<div class="container-fluid" id="navfluid">
-		<ul class='navi'>
-		  	<li><a href='#'><img alt="" id="prestigeLogoPic" src="LPCLOGO.png"/></a></li>
-		 	<li><a href="#ABOUT">About</a></li>
-			<li class="dropdown">
-				<a href="#PRICES" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services & Pricing<span class="caret"></span></a>
-				<ul class="dropdown-menu aria-labelledby="dropdownMenu1"">
-					<li><a href="#WASHES">Car Wash Packages</a></li>
-					<li><a href="#DETAIL">Detailing Services</a></li>
-				</ul>
-			</li>
-		    <li><a href="#SPECIALS">Specials</a></li>
-		    <li><a href="#CONTACT">Contact & Hours</a></li>
-		</ul>
-		</div>
-	</nav> 
+	<nav class="container-fluid">
+			<ul class='navi'>
+				<li><img alt="" id="prestigeLogoPic" src="LPCLOGO.png"/></li>
+				<li><a href="#ABOUT">About</a></li>
+				<li><a href="#PRICES">Services & Pricing</a></li>
+				<li><a href="#SPECIALS">Specials</a></li>
+				<li><a href="#CONTACT">Contact & Hours</a></li>
+				<li><a href="#JOBS">Jobs</a></li>
+			</ul>
+	</nav>
+
 
 	<!--JUBOTRON-->
 	<div class="jumbotron">	</div>
 
 	<!--ABOUT-->
-	<section id='ABOUT' class="top">
+	<section id='ABOUT'>
 		<div class = 'container-fluid'>
-			<div class="navadjustment">
 				<p id='aboutInfo'>
-					London Prestige Car Wash is a full service car wash and detailing center located in London, Ontario. 
+					London Prestige Car Wash is a full service car wash and detailing center located in London, Ontario.
 					<br>
 					Each car that goes through our carwash is cleaned with foam brushes, fresh water, and quality products, then hand dried with cotton towels.
 					<br>
@@ -57,425 +60,330 @@
 					<br><br>
 					Come visit us and experience the best car wash in London!
 					<br>
-					Open 7 days a week; weather permitting and excluding major holidays.
+					Open 6 days a week; weather permitting and excluding major holidays.
 				</p>
-			</div>
 		</div>
 	</section>
 
 	<!--PRICES-->
-	<section id='PRICES' class="container top">
-		<div class="navadjustment">
-		<h1>Services and Pricing</h1>
-		<h2 id="WASHES">Car Wash Packages</h2>	
-			<div id="Packages" class="col-md-12">
-				<p>All packages are done on a walk-in basis, no appointment necessary. Dirtier Vehicles may cost more (cat hair, messy spills, etc.), please talk to the manager upon arrival for a quick consultation for any questions about packages, your car, or for help in choosing a service. 
-				<br><em>**All prices listed do <strong>NOT</strong> include tax.</em> </p>
-					<div class="col-md-6">
-						<table class='table table-condensed table-striped'>
-							<tr>
-								<th colspan="2">#1 Exterior</th>
-							</tr>
-							<tr>
-								<td colspan="2">Soap Foam Spray</td>
-							</tr>
-							<tr>
-								<td colspan="2">Cotton Towel Hand Dry</td>
-							</tr>
-							<tr>
-								<td colspan="2">Insect and Dirt Removal</td>
-							</tr>
-							<tr>
-								<td colspan="2">Under Car Wash by Self Push Button </td>
-							</tr>
-							<tr>
-								<td colspan="2">Spotless Exterior Clean</td>
-							</tr>
-							<tfoot>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">Car Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white;">
-									<td>$12</td>
-									<td>Seniors: $11</td>
-								</tr>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">Van/SUV/Truck Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white; border-bottom:1px solid #990000;">
-									<td>$15</td>
-									<td>Seniors: $14</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
-					<div class="col-md-6">
-						<table class='table table-condensed table-striped'>
-							<tr>
-								<th colspan="2">#2 Interior & Exterior</th>
-							</tr>
-							<tr>
-								<td colspan="2"> #1 Car Wash Included, Plus...</td>
-							</tr>
-							<tr>
-								<td colspan="2"> Floor and Seat Vaccuming</td>
-							</tr>
-							<tr>
-								<td colspan="2"> Rubber Mat Cleaning</td>
-							</tr>
-							<tr>
-								<td colspan="2"> Inside Windows, Dashboard, Cupholders and Door Panel Cleaning</td>
-							</tr>
-							<tfoot>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">Car Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white;">
-									<td>$28</td>
-									<td>Seniors: $26</td>
-								</tr>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">SUV/Truck Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white;">
-									<td>$34</td>
-									<td>Seniors: $32</td>
-								</tr>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">Van Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white; border-bottom:1px solid #990000;">
-									<td>$36</td>
-									<td>Seniors: $34</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
-					<div class="col-md-6">
-						<table class='table table-condensed table-striped'>
-							<tr>
-								<th colspan="2">#3 The Works</th>
-							</tr>
-							<tr>
-								<td colspan="2">#1 and #2 Car Washes Included, Plus...</td>
-							</tr>
-							<tr>
-								<td colspan="2">Polisher</td>
-							</tr>
-							<tr>
-								<td colspan="2"> Clear Coat Protectant and Rust Inhibitor</td>
-							</tr>
-							<tr>
-								<td colspan="2"> Trunk Vaccuming</td>
-							</tr>
-							<tr>
-								<td colspan="2"> Rim Cleaning and Tire Dressing</td>
-							</tr>
-							<tfoot>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">Car Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white;">
-									<td>$38</td>
-									<td>Seniors: $35</td>
-								</tr>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">SUV/Truck Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white;">
-									<td>$44</td>
-									<td>Seniors: $41</td>
-								</tr>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">Van Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white; border-bottom:1px solid #990000;">
-									<td>$46</td>
-									<td>Seniors: $43</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
-					<div class="col-md-6">
-						<table class='table table-condensed table-striped'>
-							<tr>
-								<th colspan="2">#4 The Prestige</th>
-							</tr>
-							<tr>
-								<td colspan="2"> #3 Car Wash Included, Plus...</td>
-							</tr>
-							<tr>
-								<td colspan="2">Carpet Mat Cleaning</td>
-							</tr>
-							<tr>
-								<td colspan="2"> Beautifier Armorall Applied To All Interior Leather and Plastics</td>
-							</tr>
-							<tfoot>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">Car Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white;">
-									<td>$62</td>
-									<td>Seniors: $58</td>
-								</tr>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">SUV/Truck Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white;">
-									<td>$68</td>
-									<td>Seniors: $64</td>
-								</tr>
-								<tr>
-									<td colspan="2" style="font-size: 1.1em;">Van Pricing</td>
-								</tr>
-								<tr id="pricing" style="background: white; border-bottom:1px solid #990000;">
-									<td>$70</td>
-									<td>Seniors: $66</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
+	<section id='PRICES' class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Services and Pricing</h1>
+				<h2 id="WASHES">Car Wash Packages</h2>
+				<div id="Packages">
+					<p>All packages are done on a walk-in basis, no appointment necessary. Dirtier vehicles may cost more (cat hair, messy spills, etc.), please talk to the manager upon arrival for a quick consultation for any questions about packages, your car, or for help in choosing a service.
+					<br><em>**All prices listed do <strong>NOT</strong> include tax.</em> </p>
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<table class='table table-condensed table-striped'>
+									<tr>
+										<th colspan="2">#1 Exterior <i class="fa fa-car pull-right" aria-hidden="true"></i></th>
+									</tr>
+									<tr>
+										<td colspan="2" id="description"><em>Quality exterior cleaning for winter salt, summer insects, and year-round dirt.</em> </td>
+									</tr>
+									<tr>
+										<td colspan="2">Soap Foam Spray</td>
+									</tr>
+									<tr>
+										<td colspan="2">Cotton Towel Hand Dry</td>
+									</tr>
+									<tr>
+										<td colspan="2">Insect and Dirt Removal</td>
+									</tr>
+									<tr>
+										<td colspan="2">Under Car Wash by Self-Push Button </td>
+									</tr>
+									<tr>
+										<td colspan="2">Spotless Exterior Clean</td>
+									</tr>
+									<tfoot>
+										<tr id="pricing">
+											<td colspan="2">Car Pricing:     $14</td>
+										</tr>
+										<tr id="pricing">
+											<td>Senior Pricing:      $13</td>
+										</tr>
+										<tr  id="pricing2" style="border-bottom:1px solid #990000;">
+											<td colspan="2">Van/SUV/Trucks <em>Add $5<em></td>
+										</tr>
+										<tr  id="pricing2" style="border-bottom:1px solid #990000;">
+											<td colspan="2">Oversized Vehicles <em>Add $2<em></td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<div class="col-12 col-md-6">
+								<table class='table table-condensed table-striped'>
+									<tr>
+										<th colspan="2">#2 Interior &amp; Exterior <i class="fa fa-taxi pull-right" aria-hidden="true"></i></th>
+									</tr>
+									<tr>
+										<td colspan="2" id="description"><em>For a basic inside and out cleaning.</em> </td>
+									</tr>
+									<tr>
+										<td colspan="2"> #1 Car Wash Included, Plus...</td>
+									</tr>
+									<tr>
+										<td colspan="2"> Light Floor and Seat Vacuuming</td>
+									</tr>
+									<tr>
+										<td colspan="2"> Rubber Mat Cleaning</td>
+									</tr>
+									<tr>
+										<td colspan="2"> Inside Windows, Dashboard, Cupholders and Door Panel Cleaning</td>
+									</tr>
+									<tfoot>
+										<tr id="pricing">
+											<td colspan="2">Car Pricing: $32</td>
+										</tr>
+										<tr id="pricing">
+											<td>Senior Pricing: $30</td>
+										</tr>
+										<tr id="pricing2">
+											<td colspan="2">SUV/Truck's <em>Add $10</em></td>
+										</tr>
+										<tr id="pricing2">
+											<td colspan="2">Mini Van's <em>Add $15</em></td>
+										</tr>
+										<tr id="pricing2">
+											<td colspan="2" style="border-bottom:1px solid #990000;"> &nbsp</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<table class='table table-condensed table-striped'>
+									<tr>
+										<th colspan="2">#3 The Works <i class="fa fa-taxi pull-right" aria-hidden="true"></i></th>
+									</tr>
+									<tr>
+										<td colspan="2" id="description"><em> A great value package that targets all the areas of your car - interior, exterior, tires, and trunk.</em> </td>
+									</tr>
+									<tr>
+										<td colspan="2">#1 and #2 Car Washes Included, Plus...</td>
+									</tr>
+									<tr>
+										<td colspan="2">Triple Foam Polisher</td>
+									</tr>
+									<tr>
+										<td colspan="2"> Clear Coat Protectant and Rust Inhibitor</td>
+									</tr>
+									<tr>
+										<td colspan="2"> Trunk Vacuuming</td>
+									</tr>
+									<tr>
+										<td colspan="2"> Rim Cleaning and Tire Dressing</td>
+									</tr>
+									<tfoot>
+										<tr id="pricing">
+											<td colspan="2">Car Pricing: $46</td>
+										</tr>
+										<tr id="pricing">
+											<td>Senior Pricing: $43</td>
+										</tr>
+										<tr id="pricing2">
+											<td colspan="2">SUV/Truck's <em> Add $10</em> </td>
+										</tr>
+										<tr  id="pricing2">
+											<td colspan="2" style="border-bottom:1px solid #990000;">Mini Van's <em>Add $15</em></td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<div class="col-12 col-md-6">
+								<table class='table table-condensed table-striped'>
+									<tr>
+										<th colspan="2">#4 The Prestige <i class="fa fa-car pull-right" aria-hidden="true"></i></th>
+									</tr>
+									<tr>
+										<td colspan="2" id="description"><em> For a superior clean. This package has everything that we offer, but we thoroughly wash your carpet mats and apply a beautifier conditioner for a great finish.</em> </td>
+									</tr>
+									<tr>
+										<td colspan="2"> #3 Car Wash Included, Plus...</td>
+									</tr>
+									<tr>
+										<td colspan="2">Carpet Mat Cleaning</td>
+									</tr>
+									<tr>
+										<td colspan="2"> Beautifier Leather Vinyl Conditioner Applied To All Interior Leather and Plastics</td>
+									</tr>
+									<tfoot>
+										<tr id="pricing">
+											<td colspan="2">Car Pricing: $76</td>
+										</tr>
+										<tr id="pricing">
+											<td>Senior Pricing: $72</td>
+										</tr>
+										<tr id="pricing2">
+											<td colspan="2">SUV/Truck's <em>Add $10</em></td>
+										</tr>
+										<tr id="pricing2">
+											<td colspan="2" style="border-bottom:1px solid #990000;">Mini Van's <em>Add $15</em></td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+						<div class="row">
 
-					<div class="col-md-12" id="other">
-						<table class='table table-condensed table-striped'>
-							<tr>
-								<th class="tabletop2" colspan="2">Prestige Extras</th>
-							</tr>
-							<tr>
-								<td>Rims, Hand Cleaned</td>
-								<td>$5</td>
-							</tr>
-							<tr>
-								<td>Tire Dressing, Hand Cleaned</td>
-								<td>$5</td>
-							</tr>
-							<tr>
-								<td>Carpet Mat Cleaning (per mat)</td>
-								<td>$2.5</td>
-							</tr>
-							<tr>
-								<td>White Walls</td>
-								<td>$4</td>
-							</tr>
-							<tr>
-								<td>Trunk Vaccum</td>
-								<td>$3</td>
-							</tr>
-							<tr>
-								<td>Triple Foam Polisher</td>
-								<td>$4</td>
-							</tr>
-							<tr>
-								<td>Clear Coat Protectant</td>
-								<td>$3</td>
-							</tr>
-							<tr>
-								<td>Rust Inhibitor</td>
-								<td>$3</td>
-							</tr>
-							<tr>
-								<td>Hand Wash With Power Spray</td>
-								<td>$5</td>
-							</tr>
-							<tr>
-								<td>Hand Wash Without Power Spray</td>
-								<td>$10</td>
-							</tr>
-						</table>
-						<table class='table table-condensed side'>
-							<tr>
-								<td>* Over sized vehicles add $2</td>
-							</tr>
-							<tr>
-								<td>* Dog/cat hair and more soiled vehicles may cost more</td>
-							</tr>
-							<tr>
-								<td>* Prices do <strong> NOT </strong> include tax</td>
-							</tr>
-						</table>
+						<div class="col" id="other">
+							<table class='table table-condensed table-striped'>
+								<tr>
+									<th class="tabletop2" colspan="2"><i class="fa fa-star" aria-hidden="true"></i>Prestige Extras </th>
+								</tr>
+								<tr>
+									<td>Rims, Hand Cleaned</td>
+									<td>$7</td>
+								</tr>
+								<tr>
+									<td>Tire Dressing, Hand Cleaned</td>
+									<td>$7</td>
+								</tr>
+								<tr>
+									<td>Carpet Mat Cleaning (per mat)</td>
+									<td>$3</td>
+								</tr>
+								<tr>
+									<td>Trunk Vacuum</td>
+									<td>$5</td>
+								</tr>
+								<tr>
+									<td>Triple Foam Polisher</td>
+									<td>$6</td>
+								</tr>
+								<tr>
+									<td>Clear Coat Protectant</td>
+									<td>$4</td>
+								</tr>
+								<tr>
+									<td>Rust Inhibitor</td>
+									<td>$4</td>
+								</tr>
+								<tr>
+									<td>Hand Wash by Hand (Additional)</td>
+									<td>$10</td>
+								</tr>
+								<tr>
+									<td>Leather Vinyl Conditioner</td>
+									<td>$30</td>
+								</tr>
+							</table>
+							<table class='table table-condensed side'>
+								<tr>
+									<td>* Over sized vehicles add $5 for packages 2, 3, 4</td>
+								</tr>
+								<tr>
+									<td>* Dog/cat hair and more soiled vehicles may cost more<</div>						</div>
+								<tr>
+									<td>* Prices do <strong> NOT </strong> include tax</td>
+								</tr>
+							</table>
+						</div>
+						</div>
 					</div>
-					
-			</div>
-			<h2 class="col-md-12" id="DETAILING">Detailing Services</h2>
-			<div class="col-md-12">
-				<div class="col-md-12">
-					<p> Detailing services require a quick consultation to make an appointment, discuss the service needed, and the condition of the car area where service will be done. Please feel free to call in during business hours or walk in to see a manager to make the consultation/service booking.<br><em>**All prices listed do <strong>NOT</strong> include tax.</em> </p>
-				</div>
-				<div class="col-md-6">
-					<table class='table table-condensed col-md-7 table-striped'>
-						<tr>
-							<th colspan="2">Shampoos, Cleaning, Detailing, and Treatments</th>
-						</tr>
-						<tr>
-							<td>Carpet Floor Shampoo</td>
-							<td>$70</td>
-						</tr>
-						<tr>
-							<td>Seats Shampoo</td>
-							<td>$80</td>
-						</tr>
-						<tr>
-							<td>Ceiling Shampoo</td>
-							<td>$50</td>
-						</tr>
-						<tr>
-							<td>Inside Doors, Seatbelts, and All Interior Plastics Cleaning and Detailing</td>
-							<td>$30</td>
-						</tr>
-						<tr>
-							<td>Leather Vinyl Rejuvinating Treatment</td>
-							<td>$60</td>
-						</tr>
-						<tr>
-							<td>Scotch Guard Protection for Cars</td>
-							<td>$30</td>
-						</tr>
-						<tr>
-							<td>Vans and SUVs add</td>
-							<td>$20</td>
-						</tr>
-						<tr>
-							<td>Trucks and OverSized Vehicles add</td>
-							<td>$10</td>
-						</tr>
-						<tr>
-							<th colspan="2">Beautifier Armorall</th>
-						</tr>
-						<tr>
-							<td>Beautifier Armorall Applied to All Interior Leather, Vinyl, and Plastics</td>
-							<td>$25</td>
-						</tr>
-						<tr>
-							<td>Vans and SUVs add</td>
-							<td>$10</td>
-						</tr>
-						<tr>
-							<td>Trucks and OverSized Vehicles add</td>
-							<td>$5</td>
-						</tr>
-						<tr>
-							<th colspan="2">Hand Waxing</th>
-						</tr>
-						<tr>
-							<td>Exterior Body Hand Wax</td>
-							<td>$100</td>
-						</tr>
-						<tr>
-							<td>Vans and SUVs add</td>
-							<td>$20</td>
-						</tr>
-						<tr>
-							<td>Trucks and OverSized Vehicles add</td>
-							<td>$20</td>
-						</tr>
-						<tr>
-							<th colspan="2">Other Cleaning and Detailing Services</th>
-						</tr>
-						<tr>
-							<td>Engine Cleaning and Detailing</td>
-							<td>$40</td>
-						</tr>
-						<tr>
-							<td>Truck Cleaning and Detailing</td>
-							<td>$40</td>
-						</tr>
-						<tr>
-							<td>Individual Carpet Mat Cleaning</td>
-							<td>$2.5</td>
-						</tr>
-						<tr style="border-bottom:1px solid #990000;">
-							<td colspan="2"><em> Dog/Cat Hair and more soiled vehicles may cost more</em></td>
-						</tr>
-					</table>
-				</div>
-				<div class="col-md-6">
-					<div>
-						<table class='table table-condensed col-md-5 table-striped'>
-							<tr>
-								<th class="tabletop2" colspan="2">Full Interior Shampoo </th>
-							</tr>
-							<tr>
-								<td class="tabletop2" colspan="2"><em>save up to $44</em></td>
-							</tr>
-							<tr>
-								<td colspan="2" id="fullShampoo"><em>A full interior shampoo takes a full day, where we will clean the full interior of your car inch-by inch, with quality produts. Great for problems such as salt stains and dog hair. Includes the following.</em></td>
-							</tr>
-							<tr>
-								<td colspan="2">Carpet Floor, Seats, and Ceiling Shampoos</td>
-							</tr>
-							<tr>
-								<td colspan="2">Inside Doors, Seatbelts, and All Interior Plastics Cleaning and Detailing</td>
-							</tr>
-							<tr>
-								<td colspan="2">Beautifier Armorall Applied to All Interior Leather, Vinyl, and Plastics</td>
-							</tr>
-							<tr>
-								<td colspan="2">Individual Carpet Mat Clenaing</td>
-							</tr>
-							<tr>
-								<td colspan="2">#3 The Works Car Wash Package</td>
-							</tr>
-							<tr id="pricing2">
-								<td >$200+Tax</td>
-								<td>Vans and SUVs $250+Tax</td>
-							</tr>
-						</table>
-					</div>
-					<div>
-						<table class='table table-condensed side'>
-							<tr>
-								<td>* Dog/cat hair and more soiled vehicles may cost more</td>
-							</tr>
-							<tr>
-								<td>* Prices do <strong> NOT </strong> include tax</td>
-							</tr>
-						</table>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
 
 	<!--SPECIALS-->
-	<section id='SPECIALS' class="container top">
-		<div class="navadjustment">
+	<section id='SPECIALS' class="container">
 		<h1>Specials</h1>
-			<div class='specialRow'>
-		        <div class="specialhover" id="seniorDisc"></div>
-		        <div class="specialhover" id="buy5"></div>
-		        <div class="specialhover" id="stamp"></div>
-		        <div class="specialhover" id="shampoo" ></div>
-		        <div class="specialhover" id="gift"></div>
-		    </div> 
+		<div class='specialRow'>
+			<div class="specialhover" id="seniorDisc"></div>
+			<div class="specialhover" id="buy5"></div>
+			<div class="specialhover" id="stamp"></div>
+			<div class="specialhover" id="gift"></div>
 		</div>
+	</section>
+
+	<!--JOBS-->
+	<section id='JOBS' class="container">
+		<h1>Jobs</h1>
+		<div class="card">
+		  <h3 class="card-header">Cashier</h3>
+		  <div class="card-block">
+		    <h4 class="card-title">We are currently looking for a cashier to complete duties that include the following&#58;</h4>
+		    <p class="card-text">
+		    	<ul>
+						<li>Greeting customers</li>
+						<li>Accurately handling cash transactions </li>
+						<li>Handling debit/credit transactions </li>
+						<li>Reporting to the manager </li>
+						<li>Keeping track of number of customers served </li>
+						<li>Simple tasks (i.e. restocking air fresheners, enveloping gift certificates, stamping cards, etc.)</li>
+					</ul>
+					Requirements&#58;
+					<ul>
+						<li> Basic math skills (i.e. calculating change and counting) </li>
+						<li> A friendly and welcoming attitude</li>
+						<li> Ability to complete tasks as requested</li>
+					</ul>
+					<hr/>
+					If interested, please contact John at <a href="tel:+15196196768">(519)619-6768</a>, or visit the business in person at 875 Wellington Road South with a resume.
+				</p>
+			</div>
+		</div>
+		<br>
+		<div class="card">
+			  <h3 class="card-header">Car Wash Attendant</h3>
+			  <div class="card-block">
+					<h4 class="card-title">A hard-working car wash attendant that will work with our team to serve our customers is needed. Duties include the following&#58;</h4>
+					<p class="card-text">
+						<ul>
+							<li>Loading/unloading washing machines</li>
+							<li>Hand cleaning and drying cars</li>
+							<li>Reporting to the manager </li>
+							<li>Collecting tickets from customers</li>
+						</ul>
+						Requirements&#58;
+						<ul>
+							<li>Attention to detail</li>
+							<li>Hard working</li>
+							<li>Able to work with a team</li>
+							<li>Able to work in a fast-pace environment</li>
+							<li>Able to complete tasks as requested</li>
+						</ul>
+						<hr/>
+						If interested, please <strong>visit</strong> the business in person at 875 Wellington Road South with a resume.
+			    </p>
+			  </div>
+			</div>
 	</section>
 
 	<!--CONTACT-->
 	<section id='CONTACT' class="container">
-		<div class="navadjustment">
 		<h1>Contact Us</h1>
-		<div class="col-md-4" id="contactInfo">
-			<p>
-				<br><a href="tel:+15196810896">(519) 681-0896</a>
-				<br>875 Wellington Road South
-	            <br>(South of Southdale Road East)
-	            <br>London, Ontario
-	            <br>N6E-3N5
-	            <br>
-	            <br>Monday-Saturday: 9:00 AM - 5:00 PM
-	            <br>Sunday: Closed
-	            <br>
-	            <br><em><strong> Open 6 days a week, weather permitting.
-	            <br>(Closed during unfavorable weather i.e. wet days, rain, snow fall, etc.)
-	            <br> Closed during major holidays.</strong></em>
-	        </p>
-        </div>
-        <div class='col-md-8'>
-            <iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1460.3716407969596!2d-81.22567935218491!3d42.941538656863294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x412ab5eb2d90bff2!2sPrestige+Car+Wash!5e0!3m2!1sen!2sca!4v1406171101503" height="400" style="border:0"></iframe>
-        </div>
-        </div>
+		<div class="row">
+			<div class="col-md-5" id="contactInfo">
+				<p>
+					<a href="tel:+15196810896">(519) 681-0896</a>
+					<br>875 Wellington Road South
+	        <br>(South of Southdale Road East, behind Fed Ex)
+	        <br>London, Ontario
+	        <br>N6E-3N5
+	        <br>
+	        <br>Monday-Friday: 9:00 AM - 6:00 PM
+	        <br>Saturday: 9:00 AM - 5:00 PM
+	        <br>Sunday: Closed
+	        <br>
+	        <br><strong> Open 6 days a week, weather permitting
+	        <br>(Closed during unfavorable weather i.e. wet days, rain, snow fall, etc.).
+	        <br> Closed during major holidays.</strong>
+	    	</p>
+	    </div>
+	    <div class='col-md-7'>
+        <iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1460.3716407969596!2d-81.22567935218491!3d42.941538656863294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x412ab5eb2d90bff2!2sPrestige+Car+Wash!5e0!3m2!1sen!2sca!4v1406171101503" height="400" style="border:0"></iframe>
+    </div>
+    </div>
 	</section>
 
-	<div class='col-md-12' id='botBar'></div>
+
+	<footer class="text-center center-block" id='botBar'>
+		<a href="https://search.google.com/local/writereview?placeid=ChIJx2LxbbnzLogR8r-QLeu1KkE"> Like us? <br>Click here to say <em>thanks</em> by reviewing us on <i class="fa fa-google-plus" aria-hidden="true"></i>oogle</a>
+	</footer>
 </body>
 </html>
