@@ -19,28 +19,31 @@ h2{
   list-style: none;
   margin:0px;
   margin-left:-15px;
-  padding:0 0.1rem;
+  padding:10px 0.1rem 0 0.1rem;
   top:0;
   overflow: hidden;
-  background-color: #282733;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   z-index: 1;
+  box-shadow: 0 1px 5px black;
 }
 
 .navi li a:hover{
   text-decoration: none;
-  border-bottom: #c90211 3px solid;
+  border-bottom: #000 3px solid;
 }
 
 .navi li{
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .navi li a{
   margin-top: 25px;
-  color: white;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #000053;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 1.4rem;
@@ -60,11 +63,35 @@ section{
 }
 
 /*------------------------ABOUT-------------------*/
+#Notice{
+	background: #fabb00;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+#ABOUT{
+  background-image: url(carwashbackground-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 145px;
+}
 
 #aboutInfo{
   text-align: center;
-  top: 5px;
+  top: 145px;
   font-weight: 700;
+  text-shadow: 1.5px 1.5px 1.5px black;
+  color: white;
+}
+
+.dark-overlay{
+  background-color: rgba(0,0,20,0.55);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 /*-----------------------PRICING------------------------*/
@@ -87,7 +114,7 @@ th{
 #pricing{
   font-weight: bold;
   color: white;
-  background-color: #7F0000;
+  background-color: #000053;
 }
 #pricing2{
   font-weight: bold;
@@ -113,6 +140,10 @@ tfoot{
   background-color: #262626;
   color: white;
   font-style: italic;
+}
+
+.prices-border-bottom{
+  border-bottom:1px solid #fabb00;
 }
 
 /*----------------SPECIAL PART---------------------------*/
@@ -166,7 +197,7 @@ tfoot{
 
 #botBar{
   height: 160px;
-  background-color: #f5f5f5;
+  background-color: #fabb00;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5em;
 }
@@ -178,7 +209,7 @@ tfoot{
 }
 
 #botBar a:hover{
-  color: #f0bc00;
+  color: blue;
 }
 p strong{
   font-weight: 700;
@@ -191,6 +222,15 @@ p strong{
   html, body{
     width: 100%;
   }
+
+  .small-device-block{
+    display: block !important;
+  }
+
+  .navi{
+    padding-top: 2px;
+  }
+
   .navi li a{
     font-size: 1.1rem;
   }
